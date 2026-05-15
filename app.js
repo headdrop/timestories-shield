@@ -20,12 +20,13 @@ let isNavClicking = false;
 let scrollTimeout = null;
 
 let currentModalCount = 3; 
+let swipeObserver = null;
 
 // --- [2] 초기화 및 렌더링 ---
 function init() {
+    setupSwipeDetection();
     renderMaps();
     setupNavigation();
-    setupSwipeDetection();
 
     document.getElementById('shield-type-selection').addEventListener('click', (e) => {
         const btn = e.target.closest('button'); 
@@ -217,6 +218,11 @@ function renderMaps() {
         card.appendChild(contentWrapper);
         container.appendChild(card);
     });
+
+    if (swipeObserver) {
+        swipeObserver.disconnect();
+        document.querySelectorAll('.location-card').forEach(c => swipeObserver.observe(c));
+    }
 }
 
 function saveAndRender() {
@@ -321,7 +327,7 @@ function setupNavigation() {
 function setupSwipeDetection() {
     const container = document.getElementById('map-container');
     
-    const observer = new IntersectionObserver((entries) => {
+    swipeObserver = new IntersectionObserver((entries) => {
         if (isNavClicking) return;
 
         entries.forEach(entry => {
@@ -340,8 +346,6 @@ function setupSwipeDetection() {
         root: container, 
         threshold: 0.5 
     }); 
-    
-    document.querySelectorAll('.location-card').forEach(c => observer.observe(c));
 }
 
 init();
