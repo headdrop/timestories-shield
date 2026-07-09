@@ -8,7 +8,7 @@
 1. **방패 추가**: 빈 카드(+)를 눌러 방패를 추가하세요.
 2. **개수 감소**: 방패가 채워진 카드를 누르면 방패 개수가 1 줄어듭니다.
 3. **상세 설정**: 우측 하단의 **숫자**를 누르거나 카드를 **길게(롱탭)** 누르면 방패 종류와 개수를 세밀하게 조절할 수 있습니다.
-4. **일괄 제거**: 상단의 **장소 이름(A~F)**을 길게 누르면 해당 장소의 방패를 일괄 제거할 수 있습니다. (왼쪽에 채워진 방패부터 제거됩니다.)
+4. **일괄 제거**: 상단의 **장소 이름(B~G)**을 길게 누르면 해당 장소의 방패를 일괄 제거할 수 있습니다. (왼쪽에 채워진 방패부터 제거됩니다.)
 5. **데이터 초기화**: 브라우저 창을 닫거나 헤더의 초기화(🗑️) 버튼을 누르면 모든 데이터가 초기화됩니다.
 6. **도움말**: 헤더의 물음표(❓) 버튼을 누르면 상세 가이드를 모달 창으로 확인할 수 있습니다.
 
@@ -38,7 +38,7 @@
 1. **Add Shield**: Tap an empty card (+) to add a shield.
 2. **Decrease Count**: Tap a filled shield card to decrease the count by 1.
 3. **Settings**: Click the **number** at the bottom right or **long-press** a card to customize the shield type and quantity.
-4. **Bulk Remove**: Long-press the **Location Name (A-F)** to clear all shields in that location (removes from left to right).
+4. **Bulk Remove**: Long-press the **Location Name (B-G)** to clear all shields in that location (removes from left to right).
 5. **Reset Data**: All data will be reset when you close the browser window or click the Clear All (🗑️) button in the header.
 6. **Help**: Click the question mark (❓) button in the header to view the detailed guide in a modal window.
 

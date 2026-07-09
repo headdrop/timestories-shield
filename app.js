@@ -1,5 +1,5 @@
 // --- [1] 설정 및 아이콘 매핑 ---
-const LOCATIONS = ['A', 'B', 'C', 'D', 'E', 'F'];
+const LOCATIONS = ['B', 'C', 'D', 'E', 'F', 'G'];
 const MAX_PER_SLOT = 10; 
 
 const OVERLAY_ICONS = {
@@ -15,7 +15,7 @@ if (Object.keys(gameState).length === 0) {
     LOCATIONS.forEach(loc => gameState[loc] = [null, null, null]);
 }
 
-let currentLocation = 'A';
+let currentLocation = 'B';
 let isNavClicking = false;
 let scrollTimeout = null;
 
